@@ -18,11 +18,11 @@ export class AppComponent {
 		});
 	}
 
-	onBluePrintAdded(bluePrintData: { bluePrintName: string, bluePrintContent: string }) {
+	onBluePrintAdded(bluePrintData: { serverName: string, serverContent: string }) {
 		this.serverElements.push({
 			type: 'blueprint',
-			name: bluePrintData.bluePrintName,
-			content: bluePrintData.bluePrintContent
+			name: bluePrintData.serverName,
+			content: bluePrintData.serverContent
 		});
 	}
 }
